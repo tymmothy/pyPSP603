@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: psp603
+Version: 0.1
+Summary: GW-Instek PSP603 power supply control module
+Home-page: UNKNOWN
+Author: Tymm Twillman
+Author-email: tymmothy@gmail.com
+License: BSD-new
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Requires: pySerial
+Provides: psp603

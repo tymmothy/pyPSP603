@@ -1,0 +1,32 @@
+This is a Python module for control of GW-Instek PSP-603 power supply units
+over a serial interface.  It requires pySerial to be installed, and a recent
+(2.6 or newer) version of Python.
+
+Note that a special cable may be necessary to interface with the power
+supplies (they are optoisolated, so voltage is needed from the computer's
+serial port for communications to work).  The power supplies communicate
+at 2400 baud.
+
+
+To install:
+
+# python setup.py install
+
+
+Example:
+
+#!/usr/bin/python
+
+# Set output voltage to 6.5v, enable output and print the output current
+
+import serial
+from psp603 import PSP603
+
+device = serial.Serial("/dev/ttyS0", 2400)
+psu = PSP603(device)
+
+psu.voltage = 6.5
+psu.relay = True
+
+print psu.current
+
